@@ -1,9 +1,9 @@
-import { Expose } from 'class-transformer';
+import { IsNotEmpty } from 'class-validator';
 
 export class CreateOfferingDto {
-  @Expose()
+  @IsNotEmpty()
   title: string;
 
-  @Expose()
+  @IsNotEmpty()
   description: string;
 }

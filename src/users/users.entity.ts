@@ -6,7 +6,7 @@ import { Column, Entity, OneToMany } from 'typeorm';
 @Entity('users')
 export class User extends BaseEntity {
   @Column({ type: 'text' })
-  username: string;
+  name: string;
 
   @Column({ type: 'text' })
   email: string;
